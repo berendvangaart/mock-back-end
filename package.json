@@ -1,0 +1,25 @@
+{
+  "name": "mock-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berendvangaart/mock-back-end.git"
+  },
+  "author": "Berend",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berendvangaart/mock-back-end/issues"
+  },
+  "homepage": "https://github.com/berendvangaart/mock-back-end#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
