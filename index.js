@@ -25,5 +25,22 @@ app.delete('/', (req, res) => {
     res.send(data);
 })
 
+app.put('/', (req, res) => {
+    console.log("Body: ", req.body)
+
+    const result = data.map(obj => {
+        console.log(obj);
+        if (obj.id === req.body.id) {
+            return req.body
+        } else {
+            return obj
+        }
+    })
+
+    console.log("result ",result)
+
+    res.send(data);
+})
+
 
 app.listen(port, () => console.log(`🚀🚀 server UP: Listening on port ${port} 🚀🚀`))
