@@ -45,7 +45,6 @@ app.delete('/:id', (req, res) => {
  */
 app.put('/', (req, res) => {
     console.log("Body: ", req.body)
-
     const result = data.map(obj => {
         console.log(obj);
         if (obj.id === req.body.id) {
@@ -54,10 +53,9 @@ app.put('/', (req, res) => {
             return obj
         }
     })
-
-    console.log("result ",result)
-
-    res.send(data);
+    data = result
+    console.log("result ", result)
+    res.send(result);
 })
 
 
